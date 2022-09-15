@@ -1,43 +1,56 @@
-#section1{
-    width:33%;
-    height:300px;
-    background-color: cadetblue;
-    text-decoration: wavy;
-    display:inline-block;
-    box-sizing: border-box;
+body{
+    background-color: #b7b3b3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#main-pic{
+    display: block;
+    height: 30em;
+    /* width:100%; */
+    background: url("../images/athletes.jpg") no-repeat;
+    background-size: cover;
+    /* object-fit: fill; */
+    border: 3px solid firebrick;
     
 }
 
-#section2{
-    width:33%;
+.circles > section{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    /* display:flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between;
+    flex-wrap: nowrap; */
+    width:300px;
     height:300px;
-    background-color: rgb(131, 182, 50);
-    color: transparent;
-    display: inline-block;
+    border-radius:50%;
+    background-color: coral;
     box-sizing: border-box;
-}
-#section3{
-    width:33%;
-    height:300px;
-    background-color: rgb(89, 66, 215);
-    text-decoration: wavy;
-    display: inline-block;
-    box-sizing: border-box;
-    
+    /* position: relative; */
+    padding: 70px;
+    text-align: center;
+    border: 20px solid blue;
+    /* margin-left: auto;
+    margin-right: auto; */
     
 }
 
+.box > p{
+    text-decoration: transparent;
+    color: aqua;
+}
 
-
-.box:hover{
+.circles > section:hover{
     color:red;
-    width:600px;
+    /* width:600px; */
+    position: relative;
+    text-align:center; 
+    rotate: 270deg;
+    height: 400px;
+    transform: rotate(90deg);
+    transition: width 2s, transform 2s;
+    text-transform: uppercase;
 }
 
-#section2:hover{
-    color: black;
-    width:600px;
-}
 
 li{
     width:100%;
