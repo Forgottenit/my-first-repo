@@ -13,42 +13,78 @@ body{
     
 }
 
-.circles > section{
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    /* display:flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-between;
-    flex-wrap: nowrap; */
-    width:300px;
-    height:300px;
-    border-radius:50%;
-    background-color: coral;
-    box-sizing: border-box;
-    /* position: relative; */
+.box1{
+    display:inline-flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
     padding: 70px;
     text-align: center;
+    background-color: coral;
+    position:relative;
+    box-sizing: border-box;
     border: 20px solid blue;
-    /* margin-left: auto;
-    margin-right: auto; */
-    
 }
 
-.box > p{
-    text-decoration: transparent;
+.box2{
+    display:inline-flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    padding: 70px;
+    text-align: center;
+    background-color: #faf200;
+    position:relative;
+    box-sizing: border-box;
+    border: 20px solid blue;
+}
+
+.box3{
+    display:inline-flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:300px;
+    height:100px;
+    border-radius: 50px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: hsl(331, 95%, 54%);
+    position:relative;
+    box-sizing: border-box;
+    border: 20px solid blue;
+}
+
+p{
+    visibility:hidden;
+}
+
+/* .box:hover{
+    opacity: 10%;
     color: aqua;
-}
-
-.circles > section:hover{
+    transition: opacity 5s ease-out;
+} */
+.box1:hover{
     color:red;
-    /* width:600px; */
     position: relative;
     text-align:center; 
     rotate: 270deg;
-    height: 400px;
+    height: 100%;
+    width:100%;
+    flex-wrap: nowrap;
+    /* border-radius:100%; */
     transform: rotate(90deg);
     transition: width 2s, transform 2s;
     text-transform: uppercase;
+    opacity: 10%;
+    transition: opacity 5s;
+    z-index: 1;
 }
 
 
